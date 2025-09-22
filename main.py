@@ -10,7 +10,8 @@ Contient les fonctions artcode_i (itératif), artcode_r (récursif) et main().
 
 def artcode_i(s):
     """
-    Retourne la liste de tuples encodant une chaîne de caractères passée en argument selon un algorithme itératif.
+    Retourne la liste de tuples encodant une chaîne de caractères passée en argument
+    selon un algorithme itératif.
     Args:
         s (str): la chaîne de caractères à encoder
     Returns:
@@ -31,7 +32,8 @@ def artcode_i(s):
 
 def artcode_r(s):
     """
-    Retourne la liste de tuples encodant une chaîne de caractères passée en argument selon un algorithme récursif.
+    Retourne la liste de tuples encodant une chaîne de caractères passée en argument
+    selon un algorithme récursif.
     Args:
         s (str): la chaîne de caractères à encoder
     Returns:
@@ -44,7 +46,6 @@ def artcode_r(s):
     while count < len(s) and s[count] == first:
         count += 1
     return [(first, count)] + artcode_r(s[count:])
-    
 
 #### Fonction principale
 
